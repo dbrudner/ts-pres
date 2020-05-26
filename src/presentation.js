@@ -1,19 +1,7 @@
 // Import React
 import React from 'react';
-
 // Import Spectacle Core tags
-import {
-  BlockQuote,
-  Cite,
-  Deck,
-  Heading,
-  ListItem,
-  List,
-  Quote,
-  Slide,
-  Text,
-} from 'spectacle';
-
+import { Deck, Slide, Heading, List, ListItem, Text } from 'spectacle';
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
 
@@ -43,51 +31,81 @@ export default class Presentation extends React.Component {
       >
         <Slide transition={['zoom']} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Spectacle Boilerplate
+            Intro to TypeScript
           </Heading>
-          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-            open the presentation/index.js file to get started
-          </Text>
         </Slide>
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>
-            Typography
-          </Heading>
-          <Heading size={1} textColor="secondary">
-            Heading 1
-          </Heading>
-          <Heading size={2} textColor="secondary">
-            Heading 2
-          </Heading>
-          <Heading size={3} textColor="secondary">
-            Heading 3
-          </Heading>
-          <Heading size={4} textColor="secondary">
-            Heading 4
-          </Heading>
-          <Heading size={5} textColor="secondary">
-            Heading 5
-          </Heading>
-          <Text size={6} textColor="secondary">
-            Standard text
-          </Text>
-        </Slide>
-        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>
-            Standard List
+        <Slide transition={['zoom']} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Goals
           </Heading>
           <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
+            <ListItem>Gain understanding of what TypeScript offers</ListItem>
+            <ListItem>
+              Persuade to learn more about TS and consider it when building your
+              next thing
+            </ListItem>
           </List>
         </Slide>
-        <Slide transition={['fade']} bgColor="secondary" textColor="primary">
-          <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
-          </BlockQuote>
+        <Slide transition={['zoom']} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            What is TypeScript
+          </Heading>
+          <Text>A superset of javascript that allows for static typing</Text>
+        </Slide>
+        <Slide transition={['zoom']} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Where is TypeScript
+          </Heading>
+          <List>
+            <ListItem>Everywhere in the JS ecosystem</ListItem>
+          </List>
+        </Slide>
+        <Slide transition={['zoom']} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Why should you use typescript in your app
+          </Heading>
+          <List>
+            <ListItem>
+              Code documentation and all the benefits thereof (faster onboarding
+              time, easier collaboration, better code review)
+            </ListItem>
+            <ListItem>
+              Faster development time, specifically in large/mature apps
+            </ListItem>
+            <ListItem>Improves 3rd party code integration (demo)</ListItem>
+          </List>
+        </Slide>
+        <Slide transition={['zoom']} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            TypeScript cons
+          </Heading>
+          <List>
+            <ListItem>NOT a drop-in replacement for unit testing</ListItem>
+          </List>
+          <List>
+            <ListItem>Poor error messaging for complex types</ListItem>
+          </List>
+          <List>
+            <ListItem>Learning curve</ListItem>
+          </List>
+        </Slide>
+        <Slide transition={['zoom']} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Why should you learn typescript
+          </Heading>
+          <List>
+            <ListItem>
+              All the benefits you get from a statically typed language
+            </ListItem>
+            <ListItem>It's everywhere at this point</ListItem>
+            <ListItem>It'll make you a better developer</ListItem>
+            <ListItem>Gain a better understanding of your own code</ListItem>
+          </List>
+        </Slide>
+        <Slide transition={['zoom']} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            How
+          </Heading>
         </Slide>
       </Deck>
     );
